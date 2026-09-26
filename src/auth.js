@@ -1,0 +1,1 @@
+export function bearer(token){if(!token)throw new TypeError("token_required");return {authorization:`Bearer ${token}`};}export function apiKey(name,value){if(!name||!value)throw new TypeError("api_key_required");return {[name]:value};}
